@@ -11,7 +11,7 @@ export default function Home() {
         <section className="max-w-md mx-auto px-6 py-12 bg-white rounded-2xl shadow-lg">
           <div className="text-6xl mb-4">🚧</div>
           <h1 className="text-3xl font-bold mb-2 text-gray-800">
-            Página em Construção
+            Página em Construção 1
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             Estamos trabalhando para trazer algo incrível. Volte em breve!
