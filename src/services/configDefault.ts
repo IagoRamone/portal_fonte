@@ -28,7 +28,7 @@ export const serviceNavbar = async () => {
     context: {
       fetchOptions: {
         next: {
-          // revalidate: 6000,
+          revalidate: 60,
         },
       },
     },
