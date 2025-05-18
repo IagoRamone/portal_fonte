@@ -1,16 +1,7 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono as GeistMono } from 'next/font/google'
-import '@/styles/globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = GeistMono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+import { Navbar } from '@/components/Navbar'
+import { serviceNavbar } from '@/services/configDefault'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portal.unisuam.site'),
@@ -35,18 +26,16 @@ export const metadata: Metadata = {
   keywords: [],
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const data = await serviceNavbar()
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <main>
+      <Navbar data={data} />
+      {children}
+    </main>
   )
 }
