@@ -15,7 +15,7 @@ export const CardInfo = ({
         alt={title}
       />
       <section className="overflow-hidden  pl-4 pt-2 flex flex-col gap-2">
-        <p className="text-lg ">{title}</p>
+        <p className="text-lg font-medium">{title}</p>
         <p className="text-base line-clamp-1">{description}</p>
       </section>
     </div>
