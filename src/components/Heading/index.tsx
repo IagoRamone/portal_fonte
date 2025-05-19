@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Heading: React.FC = () => {
+const Heading = () => {
   return (
     <div className="text-[rgb(0,64,112)] space-y-2">
       <h1 className="text-5xl font-bold">Heading 1</h1>
