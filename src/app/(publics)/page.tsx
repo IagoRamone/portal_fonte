@@ -1,6 +1,7 @@
 import { classNames } from '@/utils/classNames';
 import Secaodestaque from '@/components/secaodestaque';
 import Card from '@/components/Card-featured';
+import Paragraph from '@/components/paragraph';
 
 
 export default async function Home() {
